@@ -1,0 +1,124 @@
+ <-- Build a Survey Form -->
+
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">freeCodeCamp Survey Form</h1>
+    <p class="one"id="description">Please fill out this form to provide us with your feedback.</p>
+    <body>
+    
+      <form id="survey-form">
+      <label id="name-label" for="name">Name:</label> 
+        <input id="name" type="text" placeholder="Enter your name" required>
+<br>  
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+<br>
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" min="18" max="100" placeholder="Enter your age" required>
+<br>
+        <!-- Select Dropdown -->
+        <label for="dropdown">Role</label>
+        <select id="dropdown" required>
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend??</p>
+        <label><input type="radio" name="referral" value="social-media" required> Definitely</label>
+        <br>
+        <label><input type="radio" name="referral" value="friend"> Maybe</label>
+<br>
+    
+     <p>What would you like to see improved?</p>
+        <label><input type="checkbox" name="topics" value="web-dev"> Web Development</label>
+        <br>
+        <label><input type="checkbox" name="topics" value="data-science"> Data Science</label>
+
+        <br>
+        <br>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Share your thoughts here"></textarea>
+        </body>
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+
+/* CSS for Survery form */
+
+*{
+  background-color: #F3F3F3;
+ 
+}
+.one{
+  text-align: center;
+}
+body{
+  position: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
